@@ -2,5 +2,5 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.fortune, name="fortune"),
+    path('', views.fortune, name="randomfortune"),
 ]

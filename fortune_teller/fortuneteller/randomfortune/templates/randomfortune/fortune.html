@@ -1,18 +1,53 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- Head -->
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Django Fortune Teller</title>
- <style>
-   body {
-     text-align: center;
-   }
- </style>
+ <link rel="stylesheet" type="text/css" href="{% static 'randomfortune/styles.css' %}">
 </head>
+
+<!-- Body -->
 <body>
+    <!-- Nav Bar Section -->
+    <section>
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">FAQs</a>
+        </nav>
+    </section>
 
- <h1>Here is your fortune:</h1>
+    <!-- Button Section -->
+    <section class="clicker">
+        <h1 id="header">Click to see your fortune → </h1>
+          <a href="{% url 'randomfortune' %}">
+            <button id="fortune-button">Click</button>
+        </a>
+    </section>
 
- <p>{{fortune}}</p>
+    <!-- Fortunes Section -->
+    <section class="fortune-list">
+        <p>{{fortune}}</p>
+        <p>{{fortune}}</p>
+        <p>{{fortune}}</p>
+        <p>{{fortune}}</p>
+        <p>{{fortune}}</p>
+        <p>{{fortune}}</p>
+        <p>{{fortune}}</p>
+        <p>{{fortune}}</p>
+        <p>{{fortune}}</p>
+        <p>{{fortune}}</p>
+        <p>{{fortune}}</p>
+        <p>{{fortune}}</p>
+        <p>{{fortune}}</p>
+        <p>{{fortune}}</p>
+        <p>{{fortune}}</p>
+    </section>
 
 </body>
 </html>
