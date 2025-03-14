@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 5px solid white;
+    background-color: #1E3A5F;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    padding: 20px 0px;
+}
+
+.zones {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+}
+
+.pill {
+    box-shadow: 10px 10px 10px black;
+}
+
+.pill:hover {
+    flex-grow: 2;
+    box-shadow: 10px 10px 10px 5px black;
+    transition: box-shadow .3s ease-in;
+    background-color: rgb(150, 202, 208);
+    border-radius: 2.5em;
+    transition: width .3s ease-in, height .3 ease-in,
+                    border-radius .3 ease-in;
+}
+
+.lef-divs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10em;
+    height: 5em;
+    background-color: white;
+    border-radius: 2.5em;
+}
+
+.mid-divs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10em;
+    height: 5em;
+    background-color: white;
+    border-radius: 2.5em;
+}
+
+.right-divs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 10em;
+    min-height: 5em;
+    background-color: white;
+    border-radius: 2.5em;
+}
+
+span {
+    font-size: 2rem;
+}
+
+.icons {
+    font-size: 3.5rem;
+}
+
+.red {
+    color: red;
+}
+
+.orange {
+    color: orange;
+}
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
+}

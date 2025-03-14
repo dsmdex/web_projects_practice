@@ -15,12 +15,13 @@
     <!-- Nav Bar Section -->
     <section>
         <nav class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">FAQs</a>
+            <a class="links" href="{% url 'randomfortune' %}">Home</a>
+            <a class="links" href="{% url 'randomfortune' %}">About</a>
+            <a class="links" href="{% url 'randomfortune' %}">Services</a>
+            <a class="links" href="{% url 'randomfortune' %}">FAQs</a>
         </nav>
     </section>
+    <h1 id="greeting">{{greet}}</h1>
 
     <!-- Button Section -->
     <section class="clicker">
@@ -32,21 +33,23 @@
 
     <!-- Fortunes Section -->
     <section class="fortune-list">
-        <p>{{fortune}}</p>
-        <p>{{fortune}}</p>
-        <p>{{fortune}}</p>
-        <p>{{fortune}}</p>
-        <p>{{fortune}}</p>
-        <p>{{fortune}}</p>
-        <p>{{fortune}}</p>
-        <p>{{fortune}}</p>
-        <p>{{fortune}}</p>
-        <p>{{fortune}}</p>
-        <p>{{fortune}}</p>
-        <p>{{fortune}}</p>
-        <p>{{fortune}}</p>
-        <p>{{fortune}}</p>
-        <p>{{fortune}}</p>
+        <ul>
+        <li><p>{{fortune}}</p></li>
+        <li><p>{{fortune}}</p></li>
+        <li><p>{{fortune}}</p></li>
+        <li><p>{{fortune}}</p></li>
+        <li><p>{{fortune}}</p></li>
+        <li><p>{{fortune}}</p></li>
+        <li><p>{{fortune}}</p></li>
+        <li><p>{{fortune}}</p></li>
+        <li><p>{{fortune}}</p></li>
+        <li><p>{{fortune}}</p></li>
+        <li><p>{{fortune}}</p></li>
+        <li><p>{{fortune}}</p></li>
+        <li><p>{{fortune}}</p></li>
+        <li><p>{{fortune}}</p></li>
+        <li><p>{{fortune}}</p></li>
+        </ul>
     </section>
 
 </body>
