@@ -23,7 +23,6 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    border: 1px solid rgba(255, 0, 0, 0.341);
     min-height: 5vh;
 }
 .links:link {
