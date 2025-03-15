@@ -1,0 +1,28 @@
+{% extends 'state_attractions/base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'state_attractions/style.css' %}">
+{% endblock %}
+
+{% block content %}
+    <h1 class="top">This is a list of attractions in America!</h1>
+
+    <table>
+        <tr>
+            <th>Attraction</th>
+            <th>State</th>
+            <th>State Details</th>
+        </tr>
+        {% for item in attractions|dictsort:"state" %}
+        <tr>
+            <td>{{item.attraction_name}}</td>
+            <td>{{item.state}}</td>
+            <!-- slugify is a function in Django that converts a string into a URL-friendly format,
+              known as a slug. A slug is a lowercase string where spaces and special characters are
+               replaced with hyphens (-) -->
+            <td><a href="{% url 'details' item.state|slugify %}">State Details</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
