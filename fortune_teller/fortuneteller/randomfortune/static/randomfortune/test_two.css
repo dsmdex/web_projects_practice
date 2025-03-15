@@ -7,7 +7,7 @@
 .container {
     border: 5px solid white;
     background-color: #1E3A5F;
-    min-height: 100vh;
+    min-height: 95vh;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -15,6 +15,22 @@
     align-items: center;
     gap: 200px;
     padding: 20px 0px;
+}
+
+/* Aligned navigational links with gaps*/
+.nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(255, 0, 0, 0.341);
+    min-height: 5vh;
+}
+.links:link {
+    color: blue;
+}
+.links:visited {
+    color: purple ;
 }
 
 .zones {
