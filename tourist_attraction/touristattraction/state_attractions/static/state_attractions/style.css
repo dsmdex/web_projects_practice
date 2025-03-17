@@ -13,10 +13,10 @@ table, th, td {
   }
   
   tr:nth-child(even) {
-    background-color: #eee;
+    background-color: #bcd085;
   }
   tr:nth-child(odd) {
-    background-color: #fff;
+    background-color: #a6fdca;
   }
   
   body {
