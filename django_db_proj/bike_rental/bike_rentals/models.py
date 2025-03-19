@@ -77,14 +77,17 @@ class Rental(models.Model):
     def calc_price(self):
         curr_price = BASE_PRICE
 
+        # Apply surcharges based on bike type
         if self.bike.bike_type == "TA":
             curr_price += TANDEM_SURCHARGE
         elif self.bike.bike_type == "EL":
             curr_price += ELECTRIC_SURCHARGE
+
+        # Apply VIP discount if applicable
         if self.renter.vip_num > 0:
-            curr_price -= curr_price*.20
-        
+            curr_price *= 0.8  # Apply 20% discount
+
         self.price = curr_price
-        self.save()
-        return curr_price
+        return self.price
+
     
